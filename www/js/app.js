@@ -5,16 +5,16 @@ angular.module('App', ['ngRoute', 'App.services', 'App.controllers'])
     .config(function ($routeProvider) {
         $routeProvider
         .when('/', {
-        redirectTo: '/intro'
-        })
-        .when('/intro', {
             controller: 'IntroCtrl',
             templateUrl: 'views/intro.html'
         })
+
         .when('/comp1', {
-            controller: 'Comp1Ctrl',
+            controller: 'Komp1Ctrl',
             templateUrl: 'views/comp1.html'
         })
 
         .otherwise({redirectTo: '/'});
     });
+
+app.value('itemId', 1);

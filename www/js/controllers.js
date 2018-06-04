@@ -5,19 +5,19 @@ angular.module('App.controllers', [])
         }])
 
     .controller('Comp1Ctrl', ['$scope', 'loadQuestion', function ($scope, loadQuestion) {
-        var questionData;
+//        var questionData;
 
-            loadQuestion.get(1).then(function (data) {
-            questionData = data;
-            console.log(data);
-            }, function (error) {
-            console.log(error);
-            });
+  //          loadQuestion.get(1).then(function (data) {
+    //        questionData = data;
+      //      console.log(data);
+       //     }, function (error) {
+          //  console.log(error);
+           // });
 
-        $scope.frageladen = function(){
+        //$scope.frageladen = function(){
            // alert(answerNo);
-           $scope.question = questionData.question1;
-        }
+          // $scope.question = questionData.question1;
+        //}
         }])
 
     ;
