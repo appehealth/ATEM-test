@@ -4,8 +4,8 @@
   "name": "HelloCordova",
   "short_name": "HelloCordova",
   "version": "io.cordova.hellocordova",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
-  "author": "Apache Cordova Team",
+  "description": "Index for ATEM App",
+  "author": "Seiler, Schley, Muncke",
   "icons": [],
   "start_url": "index.html"
 }
