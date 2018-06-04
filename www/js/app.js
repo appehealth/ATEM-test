@@ -10,7 +10,7 @@ angular.module('App', ['ngRoute', 'App.services', 'App.controllers'])
         })
 
         .when('/comp1', {
-            controller: 'Komp1Ctrl',
+            controller: 'Comp1Ctrl',
             templateUrl: 'views/comp1.html'
         })
 

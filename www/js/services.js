@@ -20,17 +20,17 @@ angular.module('App.services', [])
     }])
 
 
-//    .factory('loadQuestion', function ($q, $http) {
-//        return {
-//            get: function (komponente) {
-//                var deferred = $q.defer();
-//                $http.get('questions/komponente' + komponente + '.json').then(function (result) {
-//                    deferred.resolve(result.data);
-//                }, function (error) {
-//                    deferred.reject(error)
-//                });
-//                return deferred.promise;
-//            }
-//        };
-//    });
+    .factory('loadQuestion', function ($q, $http) {
+        return {
+            get: function (komponente) {
+                var deferred = $q.defer();
+                $http.get('json/comp' + komponente + '.json').then(function (result) {
+                    deferred.resolve(result.data);
+                }, function (error) {
+                    deferred.reject(error)
+                });
+                return deferred.promise;
+            }
+        };
+    });
     ;

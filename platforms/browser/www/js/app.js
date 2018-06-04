@@ -5,12 +5,10 @@ angular.module('App', ['ngRoute', 'App.services', 'App.controllers'])
     .config(function ($routeProvider) {
         $routeProvider
         .when('/', {
-        redirectTo: '/intro'
-        })
-        .when('/intro', {
             controller: 'IntroCtrl',
             templateUrl: 'views/intro.html'
         })
+
         .when('/comp1', {
             controller: 'Comp1Ctrl',
             templateUrl: 'views/comp1.html'
@@ -18,3 +16,5 @@ angular.module('App', ['ngRoute', 'App.services', 'App.controllers'])
 
         .otherwise({redirectTo: '/'});
     });
+
+app.value('itemId', 1);

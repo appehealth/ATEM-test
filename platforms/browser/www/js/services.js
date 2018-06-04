@@ -24,7 +24,7 @@ angular.module('App.services', [])
         return {
             get: function (komponente) {
                 var deferred = $q.defer();
-                $http.get('questions/komponente' + komponente + '.json').then(function (result) {
+                $http.get('json/comp' + komponente + '.json').then(function (result) {
                     deferred.resolve(result.data);
                 }, function (error) {
                     deferred.reject(error)
