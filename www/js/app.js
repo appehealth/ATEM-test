@@ -16,5 +16,3 @@ angular.module('App', ['ngRoute', 'App.services', 'App.controllers'])
 
         .otherwise({redirectTo: '/'});
     });
-
-app.value('itemId', 1);

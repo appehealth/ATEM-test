@@ -17,22 +17,4 @@ angular.module('App.services', [])
                 return impl.apply(this, arguments);
             };
         };
-    }])
-
-
-    .factory('loadQuestion', function ($q, $http) {
-        return {
-            get: function (komponente) {
-                var deferred = $q.defer();
-                $http.get('json/comp' + komponente + '.json').then(function (result) {
-                    deferred.resolve(result.data);
-                }, function (error) {
-                    deferred.reject(error)
-                });
-                return deferred.promise;
-            }
-        };
-    });
-
-
-    ;
+    }]);
