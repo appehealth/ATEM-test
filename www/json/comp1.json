@@ -1,22 +1,70 @@
 ﻿{
   "questions": [
     {
+      "id": 1
       "question": "Das ist Tim. Tim ist meistens fröhlich. Kannst Du mir zeigen, wie Tim aussieht, wenn er fröhlich ist?",
       "answers": [
-        "emotions/tim/aengstlich",
-        "emotions/tim/froehlich",
-        "emotions/tim/aergerlich",
-        "emotions/tim/traurig"
-        ]
+        "img/emotions/tim/aengstlich.jpg",
+        "img/emotions/tim/froehlich.jpg",
+        "img/emotions/tim/aergerlich.jpg",
+        "img/emotions/tim/traurig.jpg"
+        ],
+      "correctAnswer": 2
     },
     {
-      "question": "Das ist Tim. Tim ist meistens fröhlich. Kannst Du mir zeigen, wie Tim aussieht, wenn er fröhlich ist?",
+      "id": 2,
+      "question": "Das ist Tims Freund Ali. Ali ist auch manchmal traurig. Kannst Du mir zeigen, wie Ali aussieht, wenn er traurig ist?",
       "answers": [
-        "emotions/ali/traurig",
-        "emotions/ali/ueberrascht",
-        "emotions/ali/ekelnd",
-        "emotions/ali/aergerlich"
-        ]
-       }
+        "img/emotions/ali/traurig.jpg",
+        "img/emotions/ali/ueberrascht.jpg",
+        "img/emotions/ali/ekelnd.jpg",
+        "img/emotions/ali/aergerlich.jpg"
+        ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 3,
+      "question": "Ali ist auch manchmal ärgerlich. Kannst Du mir zeigen, wie Ali aussieht, wenn er ärgerlich ist?",
+      "answers": [
+        "img/emotions/ali/ueberrascht.jpg",
+        "img/emotions/ali/traurig.jpg",
+        "img/emotions/ali/froehlich.jpg",
+        "img/emotions/ali/aergerlich.jpg"
+        ],
+      "correctAnswer": 4
+    },
+    {
+      "id": 4,
+      "question": "Tim ist manchmal ängstlich. Kannst Du mir zeigen, wie Tim aussieht, wenn er ängstlich ist?",
+      "answers": [
+        "img/emotions/tim/froehlich.jpg",
+        "img/emotions/tim/ekelnd.jpg",
+        "img/emotions/tim/aengstlich.jpg",
+        "img/emotions/tim/ueberrascht.jpg"
+        ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 5,
+      "question": "Ali ekelt sich manchmal. Kannst Du mir zeigen, wie Ali aussieht, wenn er sich ekelt?",
+      "answers": [
+        "img/emotions/ali/ekelnd.jpg",
+        "img/emotions/ali/aengstlich.jpg",
+        "img/emotions/ali/froehlich.jpg",
+        "img/emotions/ali/aergerlich.jpg"
+        ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 6,
+      "question": "Tim ist manchmal auch überrascht Kannst Du mir zeigen, wie Tim aussieht, wenn er überrascht ist?",
+      "answers": [
+        "img/emotions/tim/ekelnd.jpg",
+        "img/emotions/tim/ueberrascht.jpg",
+        "img/emotions/tim/aergerlich.jpg",
+        "img/emotions/tim/traurig.jpg"
+        ],
+      "correctAnswer": 2
+    }
   ]
 }
