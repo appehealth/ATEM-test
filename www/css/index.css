@@ -11,3 +11,24 @@ body {
 p{
     margin: 30px;
 }
+
+.answerimgs{
+
+    text align: center;
+}
+
+.img {
+
+    height: 150px;
+
+    width: 150px;
+
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+
+    margin-right: 20px;
+
+    margin-left: 20px;
+
+    }
