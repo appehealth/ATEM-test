@@ -1,8 +1,9 @@
-<h1>Question 1</h1>
-<p>{{questions[0].question}}</p>
-<h2>answer 1</h2>
-<p>{{questions[0].answers[0].value}}</p>
-<p>{{questions[0].answers[0].answers}}</p>
-<h2>answer 2</h2>
-<p>{{questions[0].answers[1].value}}</p>
-<p>{{questions[0].answers[1].answers}}</p>
+<h1>Frage</h1>
+<p>{{currentQuestion.question}}</p>
+<h1>Antworten</h1>
+<p>{{currentQuestion.answers[0]}}</p>
+<p>{{currentQuestion.answers[1]}}</p>
+<p>{{currentQuestion.answers[2]}}</p>
+<p>{{currentQuestion.answers[3]}}</p>
+
+<button class="btn btn-default btn-lg btn-block verticalCentre" ng-click="naechsteFrage()" >Capture</button>

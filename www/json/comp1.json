@@ -1,46 +1,22 @@
 ﻿{
   "questions": [
     {
-      "question": "Qw1",
+      "question": "Das ist Tim. Tim ist meistens fröhlich. Kannst Du mir zeigen, wie Tim aussieht, wenn er fröhlich ist?",
       "answers": [
-        {
-          "answers": "An1",
-          "value": 25
-        },
-        {
-          "answers": "An2",
-          "value": 50
-        },
-        {
-          "answers": "An3",
-          "value": 75
-        },
-        {
-          "answers": "An4",
-          "value": 100
-        }
-      ]
+        "emotions/tim/aengstlich",
+        "emotions/tim/froehlich",
+        "emotions/tim/aergerlich",
+        "emotions/tim/traurig"
+        ]
     },
     {
-      "question": "Qw2",
+      "question": "Das ist Tim. Tim ist meistens fröhlich. Kannst Du mir zeigen, wie Tim aussieht, wenn er fröhlich ist?",
       "answers": [
-        {
-          "answers": "An1",
-          "value": 25
-        },
-        {
-          "answers": "An2",
-          "value": 50
-        },
-        {
-          "answers": "An3",
-          "value": 75
-        },
-        {
-          "answers": "An4",
-          "value": 100
-        }
-      ]
-    }
+        "emotions/ali/traurig",
+        "emotions/ali/ueberrascht",
+        "emotions/ali/ekelnd",
+        "emotions/ali/aergerlich"
+        ]
+       }
   ]
 }
