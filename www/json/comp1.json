@@ -1,7 +1,7 @@
 ﻿{
   "questions": [
     {
-      "id": 1
+      "id": 1,
       "question": "Das ist Tim. Tim ist meistens fröhlich. Kannst Du mir zeigen, wie Tim aussieht, wenn er fröhlich ist?",
       "answers": [
         "img/emotions/tim/aengstlich.jpg",
@@ -66,5 +66,6 @@
         ],
       "correctAnswer": 2
     }
-  ]
+  ],
+  "numberOfQuestions": 6
 }

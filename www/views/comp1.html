@@ -1,35 +1,25 @@
+<html>
+
 <head>
     <style>
-    .img {
-
-    height: 150px;
-
-    width: 150px;
-
-    margin-top: 20px;
-
-    margin-bottom: 20px;
-
-    margin-right: 20px;
-
-    margin-left: 20px;
-
-    }
-
-
 
     </style>
 </head>
-
+<body>
 <h1>Frage</h1>
 <p>{{currentQuestion.question}}</p>
 <h1>Antworten</h1>
 
 <div class="container">
-    <table>
+    <table class="answerimgs">
         <tr>
+<<<<<<< HEAD
             <td class="td"><img src={{currentQuestion.answers[0]}} class="img" id="option1" ng-click="answerClick(1)"></td>
             <td class="td"><img src={{currentQuestion.answers[1]}} class="img" id="option2" ng-click="answerClick(2)"></td>
+=======
+            <td class="td"><img src={{currentQuestion.answers[0]}} class="img" ption1)"></td>
+            <td class="td"><img src={{currentQuestion.answers[1]}} class="img" id="option2"></td>
+>>>>>>> ea71a78fe3d828009b3ef12e3c98ce7050131370
         </tr>
         <tr>
             <td class="td"><img src={{currentQuestion.answers[2]}} class="img" id="option3" ng-click="answerClick(3)"></td>
@@ -40,3 +30,6 @@
 
 
 <button class="btn btn-default btn-lg btn-block verticalCentre" ng-click="naechsteFrage()" >Capture</button>
+
+</body>
+</html>
