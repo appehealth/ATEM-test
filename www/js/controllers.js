@@ -9,6 +9,7 @@ angular.module('App.controllers', [])
              var iter = 0;
              var numberOfQuestions = 0;
              var results = [];
+             $scope.resultsBool = false;
               $http
                 .get("json/comp1.json")
                 .then(function(response){
@@ -18,13 +19,23 @@ angular.module('App.controllers', [])
                 });
 
               $scope.answerClick = function(i){
-                results[iter] = i;
+                results[iter] = "Frage " + $scope.currentQuestion.id + ":  Korrekte Antwort: " + $scope.currentQuestion.correctAnswer + "  Gewählte Antwort: " + i;
                 if(iter < numberOfQuestions - 1){
                     iter = iter + 1;
                     $scope.currentQuestion = allQuestions[iter];
                 }
-                else alert("Letzte Frage erreicht");
+                else{
+                 $scope.resultsBool = true;
+                 }
               };
+
+              $scope.showResults = function(){
+                var message = results[0];
+                for(j = 1; j < numberOfQuestions; j++){
+                    message += "\r\n" + results[j];
+                }
+                alert(message);
+              }
 
         }])
 
