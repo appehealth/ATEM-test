@@ -1,9 +1,42 @@
+<head>
+    <style>
+    .img {
+
+    height: 150px;
+
+    width: 150px;
+
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+
+    margin-right: 20px;
+
+    margin-left: 20px;
+
+    }
+
+
+
+    </style>
+</head>
+
 <h1>Frage</h1>
 <p>{{currentQuestion.question}}</p>
 <h1>Antworten</h1>
-<p>{{currentQuestion.answers[0]}}</p>
-<p>{{currentQuestion.answers[1]}}</p>
-<p>{{currentQuestion.answers[2]}}</p>
-<p>{{currentQuestion.answers[3]}}</p>
+
+<div class="container">
+    <table>
+        <tr>
+            <td class="td"><img src={{currentQuestion.answers[0]}} class="img" id="option1"></td>
+            <td class="td"><img src={{currentQuestion.answers[1]}} class="img" id="option2"></td>
+        </tr>
+        <tr>
+            <td class="td"><img src={{currentQuestion.answers[2]}} class="img" id="option3"></td>
+            <td class="td"><img src={{currentQuestion.answers[3]}} class="img" id="option4"></td>
+        </tr>
+    </table>
+</div>
+
 
 <button class="btn btn-default btn-lg btn-block verticalCentre" ng-click="naechsteFrage()" >Capture</button>
