@@ -1,17 +1,7 @@
-<html>
+<div id="storyImage" style="display:none">
+</div>
 
-<head>
-    <style>
-
-    </style>
-</head>
-<body>
-<h1>Frage</h1>
-<p>{{currentQuestion.question}}</p>
-<h1>Antworten</h1>
-
-
-<div class="container">
+<div class="container" style="display:none;" id="answerImages">
     <table class="answerimgs">
         <tr>
             <td class="td"><img src={{currentQuestion.answers[0]}} class="img" id="option1" ng-click="selectedAnswer = 1" ng-style="{'outline': selectedAnswer === 1 ? '5px solid green' : ''}"></td>
@@ -24,8 +14,4 @@
     </table>
 </div>
 
-
-<button class="btn-success" ng-click="naechsteFrage()" ng-show="selectedAnswer > 0" >Weiter</button>
-
-</body>
-</html>
+<button class="btn-success" onclick="document.getElementById('storyImage').style.display = 'block'" ng-show="selectedAnswer > 0" >Zeigen</button>
