@@ -6,36 +6,49 @@ angular.module('App.controllers', [])
 
     .controller('Comp1Ctrl', ['$scope', '$http', function ($scope, $http) {
         var allQuestions = [];
-        var iter = 0;
         var numberOfQuestions = 0;
-        var results = [];
-        $scope.resultsBool = false;
+        $scope.weiterBool = false;
         $http.get("json/comp1.json").then(function(response){
             allQuestions = response.data.questions;
-            numberOfQuestions = response.data.numberOfQuestions;
-            $scope.currentQuestion = allQuestions[iter];
+            numberOfQuestions = allQuestions.length;
+            $scope.currentQuestion = allQuestions[0];
         });
 
-        $scope.answerClick = function(i){
-            results[iter] = "Frage " + $scope.currentQuestion.id + ":  Korrekte Antwort: " +
-                            $scope.currentQuestion.correctAnswer + "  Gewählte Antwort: " + i;
-            if(iter < numberOfQuestions - 1){
-                iter = iter + 1;
-                $scope.currentQuestion = allQuestions[iter];
-            }
-            else{
-                $scope.resultsBool = true;
-            }
-        };
-
-        $scope.showResults = function(){
-        var message = results[0];
-        for(j = 1; j < numberOfQuestions; j++){
-            message += "\r\n" + results[j];
-        }
-        alert(message);
+        $scope.naechsteFrage = function(){
+            //To-Do: Antwort speichern
+            $scope.selectedAnswer = 0;
+            if($scope.currentQuestion.id < numberOfQuestions)
+                $scope.currentQuestion = allQuestions[$scope.currentQuestion.id];
+                else alert("Ende");
         }
     }])
+
+    .controller('Comp2Ctrl', ['$scope', '$http', function ($scope, $http) {
+        var allQuestions = [];
+        var numberOfQuestions = 0;
+        var wrongAnswers = 0;
+        $scope.weiterBool = false;
+        $http.get("json/comp2.json").then(function(response){
+            allQuestions = response.data.questions;
+            numberOfQuestions = allQuestions.length;
+            $scope.currentQuestion = allQuestions[0];
+        });
+
+        $scope.naechsteFrage = function(){
+            //To-Do: Antwort speichern
+            if($scope.selectedAnswer == $scope.currentQuestion.correctAnswer){
+                wrongAnswers = 0;
+            }
+            else{
+                wrongAnswers++;
+                if(wrongAnswers == 3){ alert("Abbruch"); }
+            }
+            $scope.selectedAnswer = 0;
+            if($scope.currentQuestion.id < numberOfQuestions)
+                $scope.currentQuestion = allQuestions[$scope.currentQuestion.id];
+                else alert("Ende");
+        }
+
 
     ;
 
