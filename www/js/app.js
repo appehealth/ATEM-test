@@ -14,5 +14,10 @@ angular.module('App', ['ngRoute', 'App.services', 'App.controllers'])
             templateUrl: 'views/comp1.html'
         })
 
+        .when('/comp2', {
+            controller: 'Comp2Ctrl',
+            templateUrl: 'views/comp2_test.html'
+        })
+
         .otherwise({redirectTo: '/'});
     });

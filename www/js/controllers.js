@@ -4,22 +4,22 @@ angular.module('App.controllers', [])
 
         }])
 
-    .controller('Comp1Ctrl', ['$scope', '$http', function ($scope, $http) {
+    .controller('Comp1Ctrl', ['$scope', '$http', '$window', function ($scope, $http, $window) {
         var allQuestions = [];
         var numberOfQuestions = 0;
-        $scope.weiterBool = false;
+        $scope.nextBool = false;
         $http.get("json/comp1.json").then(function(response){
             allQuestions = response.data.questions;
             numberOfQuestions = allQuestions.length;
             $scope.currentQuestion = allQuestions[0];
         });
 
-        $scope.naechsteFrage = function(){
+        $scope.nextQuestion = function(){
             //To-Do: Antwort speichern
             $scope.selectedAnswer = 0;
             if($scope.currentQuestion.id < numberOfQuestions)
                 $scope.currentQuestion = allQuestions[$scope.currentQuestion.id];
-                else alert("Ende");
+                else $window.location = '#/comp2';
         }
     }])
 
@@ -29,7 +29,7 @@ angular.module('App.controllers', [])
         var numberOfQuestions = 0;
         var wrongAnswers = 0;
         $scope.storyMode = true;
-        $scope.weiterBool = false;
+        $scope.nextBool = false;
         $http.get("json/comp2.json").then(function(response){
             allQuestions = response.data.questions;
             story = response.data.story;
@@ -38,7 +38,7 @@ angular.module('App.controllers', [])
             $scope.currentStory = story[0];
         });
 
-        $scope.naechsteFrage = function(){
+        $scope.nextQuestion = function(){
             //To-Do: Antwort speichern
             if($scope.selectedAnswer == $scope.currentQuestion.correctAnswer){
                 wrongAnswers = 0;
@@ -57,7 +57,7 @@ angular.module('App.controllers', [])
             else alert("Ende");
         }
 
-        $scope.naechsteStory = function(){
+        $scope.nextStory = function(){
 
         }
     }])

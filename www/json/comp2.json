@@ -108,14 +108,40 @@
       "id": 9,
       "story": "An einer S-Bahn-Station steigen einige große, böse aussehende Männer mit bellenden Hunden in die S-Bahn ein. Und auf der anderen Straßenseite sieht Tim ein paar hübsche Blumen stehen. Kannst Du mir zeigen, wie Tim sich fühlt, wenn die Männer mit den Hunden in die S-Bahn einsteigen und er die Blumen sieht?",
       "storyImg": "img/story/k2i9.jpg",
-      "question": "Ist er fröhlich oder traurig oder ekelt er sich oder ist er ängstlich?",
+      "question": "Ist er fröhlich oder ist er ängstlich oder ekelt er sich oder ist er überrascht?",
       "answers": [
-        "img/emotions/ali/froehlich.jpg",
-        "img/emotions/ali/traurig.jpg",
-        "img/emotions/ali/ekelnd.jpg",
-        "img/emotions/ali/aengstlich.jpg"
+        "img/emotions/tim/froehlich.jpg",
+        "img/emotions/tim/aengstlich.jpg",
+        "img/emotions/tim/ekelnd.jpg",
+        "img/emotions/tim/ueberrascht.jpg"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 10,
+      "story": "Eigentlich kennt Tim den Weg, den die S-Bahn fährt. Sie fährt durch einige dunkle Tunnel. Aber heute fährt sie einen anderen Weg als sonst. Kannst Du mir zeigen, wie Tim sich fühlt, wenn die S-Bahn einen anderen Weg fährt als sonst und nicht durch die dunklen Tunnel?",
+      "storyImg": "img/story/k2i10.jpg",
+      "question": "Ist er überrascht oder ekelt er sich oder ist er ärgerlich oder ist er fröhlich?",
+      "answers": [
+        "img/emotions/tim/ueberrascht.jpg",
+        "img/emotions/tim/ekelnd.jpg",
+        "img/emotions/tim/aergerlich.jpg",
+        "img/emotions/tim/froehlich.jpg"
       ],
       "correctAnswer": 1
-    },
-
     }
+  ],
+  "story":
+  [
+    {
+      "text": "Tim und Ali sind bei Tim zuhause und packen die Sachen ein, die sie für den Tag im Zoo brauchen.",
+      "image": "img/story/k2intro.jpg",
+      "id": 1
+    },
+    {
+      "text": "Nachdem sie ihre Rucksäcke gepackt haben, machen sich Tim und Ali und Tims Eltern auf den Weg zum Zoo. Sie fahren mit der S-Bahn dort hin.",
+      "image": "img/story/k2middle.jpg",
+      "id": 6
+    }
+  ]
+}
