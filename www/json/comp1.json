@@ -4,10 +4,10 @@
       "id": 1,
       "question": "Das ist Tim. Tim ist meistens fröhlich. Kannst Du mir zeigen, wie Tim aussieht, wenn er fröhlich ist?",
       "answers": [
-        "/img/emotions/tim/aengstlich.jpg",
-        "/img/emotions/tim/froehlich.jpg",
-        "/img/emotions/tim/aergerlich.jpg",
-        "/img/emotions/tim/traurig.jpg"
+        "img/emotions/tim/aengstlich.JPG",
+        "img/emotions/tim/froehlich.jpg",
+        "img/emotions/tim/aergerlich.jpg",
+        "img/emotions/tim/traurig.jpg"
         ],
       "correctAnswer": 2
     },
@@ -15,10 +15,10 @@
       "id": 2,
       "question": "Das ist Tims Freund Ali. Ali ist auch manchmal traurig. Kannst Du mir zeigen, wie Ali aussieht, wenn er traurig ist?",
       "answers": [
-        "/img/emotions/ali/traurig.jpg",
-        "/img/emotions/ali/ueberrascht.jpg",
-        "/img/emotions/ali/ekelnd.jpg",
-        "/img/emotions/ali/aergerlich.jpg"
+        "img/emotions/tim/traurig.jpg",
+        "img/emotions/ali/ueberrascht.jpg",
+        "img/emotions/ali/ekelnd.jpg",
+        "img/emotions/ali/aergerlich.jpg"
         ],
       "correctAnswer": 1
 
