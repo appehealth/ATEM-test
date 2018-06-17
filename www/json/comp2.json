@@ -3,130 +3,130 @@
     {
       "id": 1,
       "story": "Als Tim sich einen Schokoriegel in seinen Rucksack einpacken möchte, stellt er fest, dass in seinem Rucksack schon Schokoriegel drin sind. Kannst Du mir zeigen, wie Tim sich fühlt, wenn er sieht, dass in seinem Rucksack schon Schokoriegel drin sind?",
-      "storyImg": "img/story/k2i1.jpg",
+      "storyImg": "img/story/k2i1.JPG",
       "question": "Ist er traurig oder ist er ängstlich oder ekelt er sich oder ist er überrascht?",
       "answers": [
-        "img/emotions/tim/traurig.jpg",
-        "img/emotions/tim/aengstlich.jpg",
-        "img/emotions/tim/ekelnd.jpg",
-        "img/emotions/tim/ueberrascht.jpg"
+        "img/emotions/tim/traurig.JPG",
+        "img/emotions/tim/aengstlich.JPG",
+        "img/emotions/tim/ekelnd.JPG",
+        "img/emotions/tim/ueberrascht.JPG"
       ],
       "correctAnswer": 4
     },
     {
       "id": 2,
       "story": "Im Kühlschrank steht eine kleine Box. Tim möchte gerne wissen, was in der Box drin ist und öffnet sie. Es stinkt fürchterlich, weil da ein ganz alter, schlechter Käse drin ist. Kannst Du mir zeigen, wie Tim sich fühlt, wenn er den alten Käse riecht?",
-      "storyImg": "img/story/k2i2.jpg",
+      "storyImg": "img/story/k2i2.JPG",
       "question": "Ekelt er sich oder ist er traurig oder ist er fröhlich oder ist er ärgerlich?",
       "answers": [
-        "img/emotions/tim/ekelnd.jpg",
-        "img/emotions/tim/traurig.jpg",
-        "img/emotions/tim/froehlich.jpg",
-        "img/emotions/tim/aergerlich.jpg"
+        "img/emotions/tim/ekelnd.JPG",
+        "img/emotions/tim/traurig.JPG",
+        "img/emotions/tim/froehlich.JPG",
+        "img/emotions/tim/aergerlich.JPG"
       ],
       "correctAnswer": 1
     },
     {
       "id": 3,
       "story": "Ali möchte sich gerne sein Lieblingskuscheltier in seinen Rucksack packen. Aber er hat sein Kuscheltier zuhause vergessen. Kannst Du mir zeigen, wie Ali sich fühlt, wenn er sein Lieblingskuscheltier nicht in seinen Rucksack packen kann, weil er es zuhause vergessen hat?",
-      "storyImg": "img/story/k2i3.jpg",
+      "storyImg": "img/story/k2i3.JPG",
       "question": "Ist er traurig oder ist er fröhlich oder ekelt er sich oder ist er ängstlich?",
       "answers": [
-        "img/emotions/ali/traurig.jpg",
-        "img/emotions/ali/froehlich.jpg",
-        "img/emotions/ali/ekelnd.jpg",
-        "img/emotions/ali/aengstlich.jpg"
+        "img/emotions/ali/traurig.JPG",
+        "img/emotions/ali/froehlich.JPG",
+        "img/emotions/ali/ekelnd.JPG",
+        "img/emotions/ali/aengstlich.JPG"
       ],
       "correctAnswer": 1
     },
     {
       "id": 4,
       "story": "Tims Mutter erlaubt Tim nicht, seine neue Hose für den Zoo anzuziehen. Kannst Du mir zeigen, wie Tim sich fühlt, wenn seine Mutter ihm nicht erlaubt, seine neue Hose anzuziehen?",
-      "storyImg": "img/story/k2i4.jpg",
+      "storyImg": "img/story/k2i4.JPG",
       "question": "Ist er fröhlich oder ist er ärgerlich oder ist er überrascht oder ist er ängstlich?",
       "answers": [
-        "img/emotions/tim/froehlich.jpg",
-        "img/emotions/tim/aergerlich.jpg",
-        "img/emotions/tim/ueberrascht.jpg",
-        "img/emotions/tim/aengstlich.jpg"
+        "img/emotions/tim/froehlich.JPG",
+        "img/emotions/tim/aergerlich.JPG",
+        "img/emotions/tim/ueberrascht.JPG",
+        "img/emotions/tim/aengstlich.JPG"
       ],
       "correctAnswer": 2
     },
     {
       "id": 5,
       "story": "Um ein paar Flaschen Wasser zu holen, muss Ali ganz alleine in den dunklen Keller gehen. Kannst Du mir zeigen, wie Ali sich fühlt, wenn er alleine in den dunklen Keller gehen muss?",
-      "storyImg": "img/story/k2i5.jpg",
+      "storyImg": "img/story/k2i5.JPG",
       "question": "Ist er fröhlich oder ist er überrascht oder ist er traurig oder ist er ängstlich?",
       "answers": [
-        "img/emotions/ali/froehlich.jpg",
-        "img/emotions/ali/ueberrascht.jpg",
-        "img/emotions/ali/traurig.jpg",
-        "img/emotions/ali/aengstlich.jpg"
+        "img/emotions/ali/froehlich.JPG",
+        "img/emotions/ali/ueberrascht.JPG",
+        "img/emotions/ali/traurig.JPG",
+        "img/emotions/ali/aengstlich.JPG"
       ],
       "correctAnswer": 4
     },
     {
       "id": 6,
       "story": "Tim darf sich nicht aussuchen, auf welchem Platz er sitzt, sondern seine Mama bestimmt das einfach. Ali sitzt auf seinem Platz und pfeift ein Lied. Kannst Du mir zeigen, wie Tim sich fühlt, wenn seine Mama einfach bestimmt, auf welchem Platz er sitzen muss und Ali auf seinem Platz sitzt und ein Lied pfeift?",
-      "storyImg": "img/story/k2i6.jpg",
+      "storyImg": "img/story/k2i6.JPG",
       "question": "Ekelt er sich oder ist er überrascht oder ist er ärgerlich oder ist er fröhlich?",
       "answers": [
-        "img/emotions/tim/ekelnd.jpg",
-        "img/emotions/tim/ueberrascht.jpg",
-        "img/emotions/tim/aergerlich.jpg",
-        "img/emotions/tim/froehlich.jpg"
+        "img/emotions/tim/ekelnd.JPG",
+        "img/emotions/tim/ueberrascht.JPG",
+        "img/emotions/tim/aergerlich.JPG",
+        "img/emotions/tim/froehlich.JPG"
       ],
       "correctAnswer": 3
     },
     {
       "id": 7,
       "story": "Die S-Bahnfahrt dauert sehr lange und ist langweilig. Aber Tims Mutter hat für Tim und Ali ein Comicheft mitgenommen, das sie lesen können. Kannst Du mir zeigen, wie Ali sich fühlt wenn er das Comicheft in der S-Bahn lesen kann, weil die Fahrt so lange dauert?",
-      "storyImg": "img/story/k2i7.jpg",
+      "storyImg": "img/story/k2i7.JPG",
       "question": "Ist er fröhlich oder traurig oder ekelt er sich oder ist er ängstlich?",
       "answers": [
-        "img/emotions/ali/froehlich.jpg",
-        "img/emotions/ali/traurig.jpg",
-        "img/emotions/ali/ekelnd.jpg",
-        "img/emotions/ali/aengstlich.jpg"
+        "img/emotions/ali/froehlich.JPG",
+        "img/emotions/ali/traurig.JPG",
+        "img/emotions/ali/ekelnd.JPG",
+        "img/emotions/ali/aengstlich.JPG"
       ],
       "correctAnswer": 1
     },
     {
       "id": 8,
       "story": "Tim sieht ein Mädchen in der S-Bahn, das ganz nett lächelt. Als es an ihm vorbei geht merkt er aber, dass das Mädchen total stinkt. Kannst Du mir zeigen, wie Tim sich fühlt wenn das Mädchen, das so nett gelächelt hat, an ihm vorbei geht und total stinkt?",
-      "storyImg": "img/story/k2i8.jpg",
+      "storyImg": "img/story/k2i8.JPG",
       "question": "Ist er traurig oder ist er ärgerlich oder ekelt er sich oder ist er fröhlich?",
       "answers": [
-        "img/emotions/tim/traurig.jpg",
-        "img/emotions/tim/aergerlich.jpg",
-        "img/emotions/tim/ekelnd.jpg",
-        "img/emotions/tim/froehlich.jpg"
+        "img/emotions/tim/traurig.JPG",
+        "img/emotions/tim/aergerlich.JPG",
+        "img/emotions/tim/ekelnd.JPG",
+        "img/emotions/tim/froehlich.JPG"
       ],
       "correctAnswer": 3
     },
     {
       "id": 9,
       "story": "An einer S-Bahn-Station steigen einige große, böse aussehende Männer mit bellenden Hunden in die S-Bahn ein. Und auf der anderen Straßenseite sieht Tim ein paar hübsche Blumen stehen. Kannst Du mir zeigen, wie Tim sich fühlt, wenn die Männer mit den Hunden in die S-Bahn einsteigen und er die Blumen sieht?",
-      "storyImg": "img/story/k2i9.jpg",
+      "storyImg": "img/story/k2i9.JPG",
       "question": "Ist er fröhlich oder ist er ängstlich oder ekelt er sich oder ist er überrascht?",
       "answers": [
-        "img/emotions/tim/froehlich.jpg",
-        "img/emotions/tim/aengstlich.jpg",
-        "img/emotions/tim/ekelnd.jpg",
-        "img/emotions/tim/ueberrascht.jpg"
+        "img/emotions/tim/froehlich.JPG",
+        "img/emotions/tim/aengstlich.JPG",
+        "img/emotions/tim/ekelnd.JPG",
+        "img/emotions/tim/ueberrascht.JPG"
       ],
       "correctAnswer": 2
     },
     {
       "id": 10,
       "story": "Eigentlich kennt Tim den Weg, den die S-Bahn fährt. Sie fährt durch einige dunkle Tunnel. Aber heute fährt sie einen anderen Weg als sonst. Kannst Du mir zeigen, wie Tim sich fühlt, wenn die S-Bahn einen anderen Weg fährt als sonst und nicht durch die dunklen Tunnel?",
-      "storyImg": "img/story/k2i10.jpg",
+      "storyImg": "img/story/k2i10.JPG",
       "question": "Ist er überrascht oder ekelt er sich oder ist er ärgerlich oder ist er fröhlich?",
       "answers": [
-        "img/emotions/tim/ueberrascht.jpg",
-        "img/emotions/tim/ekelnd.jpg",
-        "img/emotions/tim/aergerlich.jpg",
-        "img/emotions/tim/froehlich.jpg"
+        "img/emotions/tim/ueberrascht.JPG",
+        "img/emotions/tim/ekelnd.JPG",
+        "img/emotions/tim/aergerlich.JPG",
+        "img/emotions/tim/froehlich.JPG"
       ],
       "correctAnswer": 1
     }
@@ -135,12 +135,12 @@
   [
     {
       "text": "Tim und Ali sind bei Tim zuhause und packen die Sachen ein, die sie für den Tag im Zoo brauchen.",
-      "image": "img/story/k2intro.jpg",
+      "image": "img/story/k2intro.JPG",
       "id": 1
     },
     {
       "text": "Nachdem sie ihre Rucksäcke gepackt haben, machen sich Tim und Ali und Tims Eltern auf den Weg zum Zoo. Sie fahren mit der S-Bahn dort hin.",
-      "image": "img/story/k2middle.jpg",
+      "image": "img/story/k2middle.JPG",
       "id": 6
     }
   ]
