@@ -136,12 +136,14 @@
     {
       "text": "Tim und Ali sind bei Tim zuhause und packen die Sachen ein, die sie für den Tag im Zoo brauchen.",
       "image": "img/story/k2intro.JPG",
-      "id": 1
+      "id": 1,
+      "location": 1
     },
     {
       "text": "Nachdem sie ihre Rucksäcke gepackt haben, machen sich Tim und Ali und Tims Eltern auf den Weg zum Zoo. Sie fahren mit der S-Bahn dort hin.",
       "image": "img/story/k2middle.JPG",
-      "id": 6
+      "id": 2,
+      "location": 6
     }
   ]
 }

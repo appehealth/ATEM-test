@@ -7,7 +7,9 @@ angular.module('App.controllers', [])
     .controller('Comp1Ctrl', ['$scope', '$http', '$window', function ($scope, $http, $window) {
         var allQuestions = [];
         var numberOfQuestions = 0;
+        var results = [];
         $scope.nextBool = false;
+
         $http.get("json/comp1.json").then(function(response){
             allQuestions = response.data.questions;
             numberOfQuestions = allQuestions.length;
@@ -15,7 +17,7 @@ angular.module('App.controllers', [])
         });
 
         $scope.nextQuestion = function(){
-            //To-Do: Antwort speichern
+            results[results.length] = $scope.selectedAnswer;
             $scope.selectedAnswer = 0;
             if($scope.currentQuestion.id < numberOfQuestions)
                 $scope.currentQuestion = allQuestions[$scope.currentQuestion.id];
@@ -28,18 +30,17 @@ angular.module('App.controllers', [])
         var story = [];
         var numberOfQuestions = 0;
         var wrongAnswers = 0;
-        $scope.storyMode = true;
-        $scope.nextBool = false;
-        $http.get("json/comp2.json").then(function(response){
-            allQuestions = response.data.questions;
-            story = response.data.story;
-            numberOfQuestions = allQuestions.length;
-            $scope.currentQuestion = allQuestions[0];
-            $scope.currentStory = story[0];
-        });
+        var results = [];
+        var showAnswers = false;
+        var nextStory = 0;
+        $scope.selectedAnswer = 0;
+        $scope.showAnswers = false;
+        $scope.storyMode = false;
 
-        $scope.nextQuestion = function(){
-            //To-Do: Antwort speichern
+        function nextQuestion(){
+
+            results[results.length] = $scope.selectedAnswer;
+
             if($scope.selectedAnswer == $scope.currentQuestion.correctAnswer){
                 wrongAnswers = 0;
             }
@@ -47,19 +48,54 @@ angular.module('App.controllers', [])
                 wrongAnswers++;
                 if(wrongAnswers == 3){ alert("Abbruch"); }
             }
+
             $scope.selectedAnswer = 0;
+
             if($scope.currentQuestion.id < numberOfQuestions){
                 $scope.currentQuestion = allQuestions[$scope.currentQuestion.id];
-                if($scope.currentQuestion.flag){
+                if($scope.currentQuestion.id == nextStory){
                     $scope.storyMode = true;
                 }
+                else $scope.showAnswers = false;
             }
             else alert("Ende");
-        }
-
-        $scope.nextStory = function(){
 
         }
+
+        function continueStory(){
+
+            if($scope.storyMode){
+                $scope.storyMode = false;
+                $scope.showAnswers = false;
+                if($scope.currentStory.id < story.length)
+                    $scope.currentStory = story[$scope.currentStory.id];
+                nextStory = $scope.currentStory.location;
+            }
+            else $scope.showAnswers = true;
+
+        }
+
+
+        //Load component from JSON
+        $http.get("json/comp2.json").then(function(response){
+            allQuestions = response.data.questions;
+            story = response.data.story;
+            numberOfQuestions = allQuestions.length;
+            $scope.currentQuestion = allQuestions[0];
+
+            if(story.length>0){
+                $scope.currentStory = story[0];
+                nextStory = story[0].location;
+                $scope.storyMode = true;
+            }
+        });
+        /////////////////////////
+
+        $scope.btnContinue = function(){
+            if($scope.showAnswers) nextQuestion();
+            else continueStory();
+        }
+
     }])
 
 

@@ -27,10 +27,10 @@
       "id": 3,
       "question": "Ali ist auch manchmal ärgerlich. Kannst Du mir zeigen, wie Ali aussieht, wenn er ärgerlich ist?",
       "answers": [
-        "/img/emotions/ali/ueberrascht.JPG",
-        "/img/emotions/ali/traurig.JPG",
-        "/img/emotions/ali/froehlich.JPG",
-        "/img/emotions/ali/aergerlich.JPG"
+        "img/emotions/ali/ueberrascht.JPG",
+        "img/emotions/ali/traurig.JPG",
+        "img/emotions/ali/froehlich.JPG",
+        "img/emotions/ali/aergerlich.JPG"
       ],
       "correctAnswer": 4
     },
@@ -38,10 +38,10 @@
       "id": 4,
       "question": "Tim ist manchmal ängstlich. Kannst Du mir zeigen, wie Tim aussieht, wenn er ängstlich ist?",
       "answers": [
-        "/img/emotions/tim/froehlich.JPG",
-        "/img/emotions/tim/ekelnd.JPG",
-        "/img/emotions/tim/aengstlich.JPG",
-        "/img/emotions/tim/ueberrascht.JPG"
+        "img/emotions/tim/froehlich.JPG",
+        "img/emotions/tim/ekelnd.JPG",
+        "img/emotions/tim/aengstlich.JPG",
+        "img/emotions/tim/ueberrascht.JPG"
       ],
       "correctAnswer": 3
     },
@@ -49,10 +49,10 @@
       "id": 5,
       "question": "Ali ekelt sich manchmal. Kannst Du mir zeigen, wie Ali aussieht, wenn er sich ekelt?",
       "answers": [
-        "/img/emotions/ali/ekelnd.JPG",
-        "/img/emotions/ali/aengstlich.JPG",
-        "/img/emotions/ali/froehlich.JPG",
-        "/img/emotions/ali/aergerlich.JPG"
+        "img/emotions/ali/ekelnd.JPG",
+        "img/emotions/ali/aengstlich.JPG",
+        "img/emotions/ali/froehlich.JPG",
+        "img/emotions/ali/aergerlich.JPG"
       ],
       "correctAnswer": 1
     },
@@ -60,10 +60,10 @@
       "id": 6,
       "question": "Tim ist manchmal auch überrascht Kannst Du mir zeigen, wie Tim aussieht, wenn er überrascht ist?",
       "answers": [
-        "/img/emotions/tim/ekelnd.JPG",
-        "/img/emotions/tim/ueberrascht.JPG",
-        "/img/emotions/tim/aergerlich.JPG",
-        "/img/emotions/tim/traurig.JPG"
+        "img/emotions/tim/ekelnd.JPG",
+        "img/emotions/tim/ueberrascht.JPG",
+        "img/emotions/tim/aergerlich.JPG",
+        "img/emotions/tim/traurig.JPG"
       ],
       "correctAnswer": 2
     }
