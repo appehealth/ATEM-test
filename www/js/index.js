@@ -33,7 +33,19 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+
+        console.log("device ready");
         app.receivedEvent('deviceready');
+
+
+        window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function(dir) {
+            console.log("got main dir",dir);
+            dir.getFile("log.txt", {create:true}, function(file) {
+                console.log("got the file", file);
+                logOb = file;
+                writeLog("App started");
+            });
+        });
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
