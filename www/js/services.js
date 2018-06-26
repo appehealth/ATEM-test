@@ -17,4 +17,24 @@ angular.module('App.services', [])
                 return impl.apply(this, arguments);
             };
         };
-    }]);
+    }])
+    .service('storeEvents', function () {
+        var templates = [];
+
+       function logEvent (newObj) {
+                var timestamp = Date.now();
+                templates.push(timestamp + ': ' + newObj);
+                console.log(templates);
+
+                }
+
+      return {
+
+        templates:templates,
+        logEvent: logEvent
+
+      };
+
+
+     })
+    ;

@@ -4,11 +4,15 @@ angular.module('App.controllers', [])
 
         }])
 
-    .controller('Comp1Ctrl', ['$scope', '$http', '$window', function ($scope, $http, $window) {
+    .controller('Comp1Ctrl', ['$scope', '$http', '$window', 'storeEvents', function ($scope, $http, $window, storeEvents) {
         var allQuestions = [];
         var numberOfQuestions = 0;
         var results = [];
         $scope.nextBool = false;
+
+        storeEvents.logEvent('test');
+
+
 
         $http.get("json/comp1.json").then(function(response){
             allQuestions = response.data.questions;
@@ -25,7 +29,7 @@ angular.module('App.controllers', [])
         }
     }])
 
-    .controller('Comp2Ctrl', ['$scope', '$http', function ($scope, $http) {
+    .controller('Comp2Ctrl', ['$scope', '$http', 'storeEvents', function ($scope, $http, storeEvents) {
         var allQuestions = [];
         var story = [];
         var numberOfQuestions = 0;
@@ -36,6 +40,7 @@ angular.module('App.controllers', [])
         $scope.selectedAnswer = 0;
         $scope.showAnswers = false;
         $scope.storyMode = false;
+
 
         function nextQuestion(){
 

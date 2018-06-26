@@ -1,7 +1,17 @@
-<div id="storyImage" style="display:none">
+<div ng-style="{'display': storyMode ? 'block' : 'none'}">
+    <p>{{currentStory.text}}</p>
 </div>
 
-<div class="container" style="display:none;" id="answerImages">
+<div ng-style="{'display': (!storyMode && showAnswers) ? 'block' : 'none'}">
+    <p>{{currentQuestion.question}}</p>
+</div>
+
+<div ng-style="{'display': (!storyMode && !showAnswers) ? 'block' : 'none'}">
+    <p>{{currentQuestion.story}}</p>
+</div>
+
+
+<div class="container" ng-style="{'display': (!storyMode && showAnswers) ? 'block' : 'none'}" id="answerImages">
     <table class="answerimgs">
         <tr>
             <td class="td"><img src={{currentQuestion.answers[0]}} class="img" id="option1" ng-click="selectedAnswer = 1" ng-style="{'outline': selectedAnswer === 1 ? '5px solid green' : ''}"></td>
@@ -14,4 +24,8 @@
     </table>
 </div>
 
-<button class="btn-success" onclick="document.getElementById('storyImage').style.display = 'block'" ng-show="selectedAnswer > 0" >Zeigen</button>
+<img src={{currentQuestion.storyImg}} class="storyimg" ng-style="{'display': (!storyMode && !showAnswers) ? 'block' : 'none'}"/>
+
+<img src={{currentStory.image}} class="storyimg" ng-style="{'display': storyMode ? 'block' : 'none'}"/>
+
+<button class="btn-success" ng-click="btnContinue()" ng-show="!(!storyMode && showAnswers && selectedAnswer < 1)"> Weiter</button>
