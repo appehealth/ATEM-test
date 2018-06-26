@@ -15,18 +15,18 @@
     <table class="answerimgs">
         <tr>
             <td class="td">
-                <img src={{currentQuestion.answers[0]}} class="img" ng-click="selectedAnswer = 1" ng-style="{'outline': selectedAnswer === 1 ? '5px solid green' : ''}">
+                <img src={{currentQuestion.answers[0]}} class="img" ng-click="selectAnswer(1)" ng-style="{'outline': selectedAnswer === 1 ? '5px solid green' : ''}">
             </td>
             <td class="td">
-                <img src={{currentQuestion.answers[1]}} class="img" ng-click="selectedAnswer = 2" ng-style="{'outline': selectedAnswer === 2 ? '5px solid green' : ''}">
+                <img src={{currentQuestion.answers[1]}} class="img" ng-click="selectAnswer(2)" ng-style="{'outline': selectedAnswer === 2 ? '5px solid green' : ''}">
             </td>
         </tr>
         <tr>
             <td class="td">
-                <img src={{currentQuestion.answers[2]}} class="img" ng-click="selectedAnswer = 3" ng-style="{'outline': selectedAnswer === 3 ? '5px solid green' : ''}">
+                <img src={{currentQuestion.answers[2]}} class="img" ng-click="selectAnswer(3)" ng-style="{'outline': selectedAnswer === 3 ? '5px solid green' : ''}">
             </td>
             <td class="td">
-                <img src={{currentQuestion.answers[3]}} class="img" ng-click="selectedAnswer = 4" ng-style="{'outline': selectedAnswer === 4 ? '5px solid green' : ''}">
+                <img src={{currentQuestion.answers[3]}} class="img" ng-click="selectAnswer(4)" ng-style="{'outline': selectedAnswer === 4 ? '5px solid green' : ''}">
             </td>
         </tr>
     </table>

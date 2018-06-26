@@ -20,16 +20,22 @@ angular.module('App.services', [])
     }])
     .service('storeEvents', function () {
         var templates = [];
+        var startTime;
 
        function logEvent (newObj) {
-                var timestamp = Date.now();
+                var timestamp = Date.now() - startTime;
                 templates.push(timestamp + ': ' + newObj);
                 console.log(templates);
 
                 }
 
-      return {
+      function logStart(){
+        startTime = Date.now();
+        logEvent('Start');
+      }
 
+      return {
+        logStart: logStart,
         templates:templates,
         logEvent: logEvent
 

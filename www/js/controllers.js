@@ -1,7 +1,10 @@
 angular.module('App.controllers', [])
 
-    .controller('IntroCtrl', ['$scope', function ($scope) {
-
+    .controller('IntroCtrl', ['$scope', '$window', 'storeEvents', function ($scope, $window, storeEvents) {
+        $scope.startStory = function(){
+          storeEvents.logStart();
+          $window.location = '#/comp1';
+        }
         }])
 
     .controller('Comp1Ctrl', ['$scope', '$http', '$window', 'storeEvents', function ($scope, $http, $window, storeEvents) {
@@ -10,7 +13,7 @@ angular.module('App.controllers', [])
         var results = [];
         $scope.nextBool = false;
 
-        storeEvents.logEvent('test');
+
 
 
 
@@ -20,12 +23,22 @@ angular.module('App.controllers', [])
             $scope.currentQuestion = allQuestions[0];
         });
 
+        $scope.selectAnswer = function(ans){
+          $scope.selectedAnswer = ans;
+          storeEvents.logEvent('Select answer ' + ans);
+        }
+
         $scope.nextQuestion = function(){
             results[results.length] = $scope.selectedAnswer;
             $scope.selectedAnswer = 0;
-            if($scope.currentQuestion.id < numberOfQuestions)
+            storeEvents.logEvent('Confirm answer');
+            if($scope.currentQuestion.id < numberOfQuestions){
                 $scope.currentQuestion = allQuestions[$scope.currentQuestion.id];
-                else $window.location = '#/comp2';
+            }
+            else{
+                storeEvents.logEvent('Start component 2')
+                $window.location = '#/comp2';
+              }
         }
     }])
 
@@ -45,7 +58,7 @@ angular.module('App.controllers', [])
         function nextQuestion(){
 
             results[results.length] = $scope.selectedAnswer;
-
+            storeEvents.logEvent('Confirm answer')
             if($scope.selectedAnswer == $scope.currentQuestion.correctAnswer){
                 wrongAnswers = 0;
             }
@@ -68,7 +81,7 @@ angular.module('App.controllers', [])
         }
 
         function continueStory(){
-
+            storeEvents.logEvent('Continue');
             if($scope.storyMode){
                 $scope.storyMode = false;
                 $scope.showAnswers = false;
@@ -100,6 +113,12 @@ angular.module('App.controllers', [])
             if($scope.showAnswers) nextQuestion();
             else continueStory();
         }
+
+        $scope.selectAnswer = function(ans){
+          $scope.selectedAnswer = ans;
+          storeEvents.logEvent('Select answer ' + ans);
+        }
+
 
     }])
 

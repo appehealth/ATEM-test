@@ -4,12 +4,12 @@
       "id": 1,
       "story": "Als Tim sich einen Schokoriegel in seinen Rucksack einpacken möchte, stellt er fest, dass in seinem Rucksack schon Schokoriegel drin sind. Kannst Du mir zeigen, wie Tim sich fühlt, wenn er sieht, dass in seinem Rucksack schon Schokoriegel drin sind?",
       "storyImg": "img/story/k2i1.JPG",
-      "question": "Ist er traurig oder ist er ängstlich oder ekelt er sich oder ist er überrascht?",
+      "question": "Ist er traurig oder ist er fröhlich oder ärgerlich er sich oder ist er ängstlich?",
       "answers": [
         "img/emotions/tim/traurig.JPG",
-        "img/emotions/tim/aengstlich.JPG",
-        "img/emotions/tim/ekelnd.JPG",
-        "img/emotions/tim/ueberrascht.JPG"
+        "img/emotions/tim/froehlich.JPG",
+        "img/emotions/tim/aergerlich.JPG",
+        "img/emotions/tim/aengstlich.JPG"
       ],
       "correctAnswer": 4
     },
