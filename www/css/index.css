@@ -1,50 +1,36 @@
 body {
-
-    background-color: black;
-    color: white;
-    max-width: auto;
-    text-align: center;
-    margin-top: 150px;
-    font-size: 35px;
+  background-color: white;
+  color: black;
+  max-width: auto;
+  text-align: center;
+  margin-top: 10%;
+  font-size: 200%;
 }
 
-p{
-    margin: 30px;
+p {
+  margin: 5%;
 }
 
-.answerimgs{
-
-    text align: center;
-    margin: auto;
+.answerImgTable {
+  text align: center;
+  margin: auto;
 }
 
 .img {
+  height: 300px;
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
-    height: 150px;
-
-    width: 150px;
-
-    margin-top: 10px;
-
-    margin-bottom: 10px;
-
-    margin-right: 10px;
-
-    margin-left: 10px;
-
-    }
-
-.storyimg{
-
-    height: 300px;
-
-    width: 150px;
-
-    margin-top: 20px;
-
-    margin-bottom: 20px;
-
-    margin-right: 20px;
-
-    margin-left: 20px;
+.storyimg {
+  text align: center;
+  height: 300px;
+  width: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
 }

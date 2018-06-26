@@ -1,24 +1,8 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
+
 var app = {
     // Application Constructor
     initialize: function() {
+        console.log("index js initialize");
         this.bindEvents();
     },
     // Bind Event Listeners
@@ -36,17 +20,30 @@ var app = {
 
         console.log("device ready");
         app.receivedEvent('deviceready');
+        app.createLog();
+
+        }
+
+        createLog: function(){
+        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(getFileSystem){
+        	console.log('file system open: ' + fs.name);
+        	app.createFile(fs.root, "TestLogFile.csv", false);
+        }
+        }
+
+        createFile: function (dirEntry, fileName, isAppend) {
+            // Creates a new file or returns the file if it already exists.
+            dirEntry.getFile(fileName, {create: true, exclusive: false}, function(fileEntry) {
+
+                writeFile(fileEntry, null, isAppend);
+
+            }, onErrorCreateFile);
+
+        }
 
 
-        window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function(dir) {
-            console.log("got main dir",dir);
-            dir.getFile("log.txt", {create:true}, function(file) {
-                console.log("got the file", file);
-                logOb = file;
-                writeLog("App started");
-            });
-        });
-    },
+
+
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
