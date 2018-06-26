@@ -12,7 +12,7 @@
 
 
 <div class="container" ng-style="{'display': (!storyMode && showAnswers) ? 'block' : 'none'}" id="answerImages">
-    <table class="answerimgs">
+    <table class="answerImgTable">
         <tr>
             <td class="td"><img src={{currentQuestion.answers[0]}} class="img" id="option1" ng-click="selectAnswer(1)" ng-style="{'outline': selectedAnswer === 1 ? '5px solid green' : ''}"></td>
             <td class="td"><img src={{currentQuestion.answers[1]}} class="img" id="option2" ng-click="selectAnswer(2)" ng-style="{'outline': selectedAnswer === 2 ? '5px solid green' : ''}"></td>

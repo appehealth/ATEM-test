@@ -25,13 +25,13 @@ angular.module('App.controllers', [])
 
         $scope.selectAnswer = function(ans){
           $scope.selectedAnswer = ans;
-          storeEvents.logEvent('Select answer ' + ans);
+          storeEvents.logEvent('Select answer ' + ans, 1, $scope.currentQuestion.id);
         }
 
         $scope.nextQuestion = function(){
             results[results.length] = $scope.selectedAnswer;
             $scope.selectedAnswer = 0;
-            storeEvents.logEvent('Confirm answer');
+            storeEvents.logEvent('Confirm answer', 1, $scope.currentQuestion.id);
             if($scope.currentQuestion.id < numberOfQuestions){
                 $scope.currentQuestion = allQuestions[$scope.currentQuestion.id];
             }
@@ -58,7 +58,7 @@ angular.module('App.controllers', [])
         function nextQuestion(){
 
             results[results.length] = $scope.selectedAnswer;
-            storeEvents.logEvent('Confirm answer')
+            storeEvents.logEvent('Confirm answer', 2, $scope.currentQuestion.id)
             if($scope.selectedAnswer == $scope.currentQuestion.correctAnswer){
                 wrongAnswers = 0;
             }
@@ -81,7 +81,7 @@ angular.module('App.controllers', [])
         }
 
         function continueStory(){
-            storeEvents.logEvent('Continue');
+            storeEvents.logEvent('Continue', 2, $scope.currentQuestion.id);
             if($scope.storyMode){
                 $scope.storyMode = false;
                 $scope.showAnswers = false;
@@ -116,7 +116,7 @@ angular.module('App.controllers', [])
 
         $scope.selectAnswer = function(ans){
           $scope.selectedAnswer = ans;
-          storeEvents.logEvent('Select answer ' + ans);
+          storeEvents.logEvent('Select answer ' + ans, 2, $scope.currentQuestion.id);
         }
 
 

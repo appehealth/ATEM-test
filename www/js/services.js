@@ -22,9 +22,9 @@ angular.module('App.services', [])
         var templates = [];
         var startTime;
 
-       function logEvent (newObj) {
+       function logEvent (logText, component, item) {
                 var timestamp = Date.now() - startTime;
-                templates.push(timestamp + ': ' + newObj);
+                templates.push(timestamp + ': Component ' + component +', Item ' + item + ': ' + logText);
                 console.log(templates);
 
                 }
