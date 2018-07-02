@@ -1,45 +1,43 @@
 <html>
 
 <head>
-
-    <style>
-
-        #dropdown{
-            margin: auto;
-            width: 60px;
-        }
-
-    </style>
+  <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <style>
+  </style>
 </head>
 
 <body>
-<p>
-    Bist du ein Junge oder ein Mädchen?
-</p>
 
-<div class="btn-group btn-group-toggle" data-toggle="buttons">
-    <label class="btn btn-secondary active">
-        <input type="radio" name="geschlecht" id="geschlecht_junge" autocomplete="off" checked> Junge
+  <p>Bist du ein Junge oder ein Mädchen?</p>
+  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+    <label class="btn btn-secondary">
+        <input type="radio" name="geschlecht" id="geschlecht_junge" autocomplete="off"> Junge
     </label>
     <label class="btn btn-secondary">
         <input type="radio" name="geschlecht" id="geschlecht_maedchen" autocomplete="off"> Mädchen
     </label>
-</div>
+  </div>
 
-<p>Wann bist du geboren?</p>
-<input id="date" type="date">
-<p>Ist Deutsch deine Muttersprache?</p>
-<div class="btn-group btn-group-toggle" data-toggle="buttons">
-    <label class="btn btn-secondary active">
-        <input type="radio" name="sprache" id="sprache_ja" autocomplete="off" checked> Ja
-    </label>
-    <label class="btn btn-secondary">
-        <input type="radio" name="sprache" id="sprache_nein" autocomplete="off"> Nein
-    </label>
-</div>
-<p>
+  <p>Wann bist du geboren?</p>
+  <input id="date" type="date">
+
+  <p>Welche Sprache sprichst du zuhause?</p>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Sprache
+  </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#" selected>Deutsch</a>
+      <a class="dropdown-item" href="#">Arabisch</a>
+      <a class="dropdown-item" href="#">Türkisch</a>
+      <a class="dropdown-item" href="#">Eine andere Sprache</a>
+    </div>
+  </div>
+
+  <p>
     <a class="btn btn-success" ng-click="startStory()" role="button">Geschichte Starten</a>
-</p>
+  </p>
 
 </body>
 
