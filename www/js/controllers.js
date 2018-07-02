@@ -114,7 +114,13 @@ angular.module( 'App.controllers', [] )
 
   .controller( 'ResultsCtrl', [ '$scope', 'storeEvents', function( $scope, storeEvents ) {
     $scope.showResults = function() {
-      storeEvents.showEvents();
+      $scope.eventText = storeEvents.eventStorage.join( '\n' );
+      console.log( storeEvents.eventStorage.join( '\n' ) );
+    }
+
+    $scope.showSensor = function() {
+      $scope.sensorText = storeEvents.sensorStorage.join( '\n' );
+      console.log( 'Timestamp;X;Y;Z;' + '\n' + storeEvents.sensorStorage.join( '\n' ) )
     }
   } ] )
 
